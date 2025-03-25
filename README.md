@@ -1,3 +1,5 @@
+# WAVES: Website Informasi Chord, Tutorial, Forum, dan Wiki untuk Musik
+
 ## Deskripsi Singkat
 <p>Waves adalah platform web berbasis musik yang menyediakan berbagai fitur seperti informasi chord gitar, tutorial musik dari YouTube, forum dan wiki tentang musik, serta fitur akun untuk menyimpan referensi pengguna. Website ini bertujuan untuk memudahkan musisi dalam belajar dan mengakses materi musik dengan lebih efisien dalam satu tempat.</p>
 
