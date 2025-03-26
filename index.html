@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/utils.css">
   <link rel="stylesheet" href="css/style.css">
   <title>WAVES - Home Page</title>
 </head>
@@ -11,36 +12,202 @@
 <body>
 
   <div class="navbar-container">
-    <div class="menu-toggle">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+    <div>
+      <a><img src="images//logo.png " alt="" srcset="" class="logo"></a>
     </div>
-    <a href="">Home</a>
-    <a href="">About Us</a>
-    <a href="">Sign-Up</a>
 
-    <div class="logo-container">
-      <a href=""><img src="css/image/logo.png " alt="" srcset=""></a>
+    <div class="nav-link">
+      <a href="">Chord</a>
+      <a href="">Video Tutorial</a>
+      <a href="">Forum</a>
+      <a href="">Wiki Musik</a>
+      <a href="">Tentang Kami</a>
+      <a href="">Masuk</a>
     </div>
   </div>
 
   <div class="content-container">
-    <img src="css/image/bg.png" alt="">
-    <div class="text-container">
-      <p>"Where Worlds Fail,</p>
-      <p>Music Speaks"</p>
+    <img src="images//bg.png" alt="">
+    <div class="content-hero">
+      <div class="text-container">
+        <p class="chord-text">Temukan Chord, Tutorial, & Komunitas</p>
+        <p class="chord-text">Musik di Satu Tempat</p>
+      </div>
+
+      <div class="button-container">
+        <a href="#Jelajahi" class="btn btn-primary">Jelajahi Sekarang</a>
+      </div>
     </div>
   </div>
 
-  <div class="search-container">
-
-    <div class="text-title">
-      HERE WE GO!!
+  <!-- Find Your Music -->
+  <section class="find-music" id="Jelajahi">
+    <div class="find-music-container">
+      <h2>Temukan Musik Chord Favoritmu</h2>
+      <div class="search-container">
+        <input type="text" placeholder="Cari Chord Musik Favoritmu" class="search-input">
+      </div>
+      <div class="genre-slider">
+        <div class="slider-container">
+          <div class="slider-track">
+            <div class="slide">
+              <div class="genre-card"
+                style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                <h3>JAZZ</h3>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="genre-card"
+                style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                <h3>POP</h3>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="genre-card"
+                style="background-image: url('https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                <h3>ROCK</h3>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="genre-card"
+                style="background-image: url('https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                <h3>CLASSICAL</h3>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="genre-card"
+                style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                <h3>HIP-HOP</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn prev-btn">&lt;</button>
+        <button class="slider-btn next-btn">&gt;</button>
+      </div>
     </div>
-  <div class="search-container">
+  </section>
 
+  <!-- Konten Beranda -->
+  <div class="home-content">
+    <!-- Popular Chord -->
+    <section class="popular-chord">
+      <h2>Popular Chord</h2>
+      <div class="chord-list">
+        <div class="chord-item">
+          <img src="https://i.scdn.co/image/ab67616d0000b273164feb363334f93b6458d2a9" alt="Artist">
+          <p>Someone Like You - Adele</p>
+        </div>
+        <div class="chord-item">
+          <img src="https://i.scdn.co/image/ab67616d0000b2738792c3e96f8ab97a767c5d0c" alt="Artist">
+          <p>Until I Found You - Stephen Sanchez</p>
+        </div>
+        <div class="chord-item">
+          <img
+            src="https://cdn1-production-images-kly.akamaized.net/Yn8UX6o_8z4mOcypHLf8DssG1BQ=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2400434/original/084833400_1541404684-qb.jpg"
+            alt="Artist">
+          <p>Bohemian Rhapsody - Queen</p>
+        </div>
+      </div>
+
+      <a href="" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat Semua</a>
+    </section>
+
+    <!-- Video Tutorial Terbaru -->
+    <section class="video-tutorial">
+      <h2>Video Tutorial Terbaru</h2>
+      <div class="video-list">
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/ALkZgF9mYOk?si=k58nYPZpU9XuwVmz"
+          frameborder="0" allowfullscreen></iframe>
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/j0JK3-s0fTs?si=aLxnfqHe7nCF2eYL"
+          frameborder="0" allowfullscreen></iframe>
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/MLkFwlh7Zeo?si=ZB4SI9H4ntApvwnt"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <a href="" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat Semua</a>
+    </section>
+
+    <!-- Diskusi Terbaru -->
+    <section class="forum-discussion">
+      <h2>Diskusi Terbaru</h2>
+      <div class="forum-list">
+        <a href="">
+          <div class="forum-item">
+            <p><strong>Apakah chord minor lebih emosional?</strong></p>
+            <span>Oleh: Rizky - 10 Menit Lalu</span>
+          </div>
+        </a>
+        <a href="">
+          <div class="forum-item">
+            <p><strong>Rekomendasi gitar akustik terbaik?</strong></p>
+            <span>Oleh: Alwan - 1 Jam Lalu</span>
+          </div>
+        </a>
+      </div>
+
+      <a href="" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat Semua</a>
+    </section>
+
+    <!-- Artikel Musik Pilihan -->
+    <section class="wiki-articles">
+      <h2>Artikel Musik Pilihan</h2>
+      <div class="article-list">
+        <div class="article-item">
+          <img
+            src="https://asset.kompas.com/crops/TvzHK7thBYvzH-7XrfjLgPktqAM=/0x0:1920x1280/1200x800/data/photo/2023/03/31/64269361f2371.jpg"
+            alt="Rock Music">
+          <h3>Sejarah Musik Rock</h3>
+          <p>Musik rock berasal dari perpaduan musik blues dan country di tahun 1950-an...</p>
+          <a href="#">Baca Selengkapnya</a>
+        </div>
+        <div class="article-item">
+          <img
+            src="https://awsimages.detik.net.id/community/media/visual/2023/02/25/ilustrasi-bermain-gitar_169.png?w=600&q=90"
+            alt="Rock Music">
+          <h3>Bagaimana Chord Dibentuk?</h3>
+          <p>Chord dalam musik adalah kumpulan nada yang dimainkan secara bersamaan...</p>
+          <a href="#">Baca Selengkapnya</a>
+        </div>
+        <div class="article-item">
+          <img
+            src="https://ampedstudio.com/wp-content/webp-express/webp-images/uploads/2022/01/chord-progressions.jpg.webp"
+            alt="Rock Music">
+          <h3>Chords Progression dalam Musik</h3>
+          <p>Chord progression adalah urutan akord yang digunakan dalam musik...</p>
+          <a href="#">Baca Selengkapnya</a>
+        </div>
+      </div>
+
+      <a href="" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat Semua</a>
+    </section>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Tentang Waves</h3>
+        <p>Waves adalah platform untuk belajar musik, menemukan chord, dan berdiskusi dengan komunitas.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
 
   <script src="js/script.js"></script>
 </body>
