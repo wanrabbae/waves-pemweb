@@ -1,0 +1,447 @@
+@import url('utils.css');
+
+/* ================ BASE STYLES ================ */
+.video-tutorial-container {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  color: #fff;
+}
+
+/* ================ HEADER STYLES ================ */
+.video-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.video-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
+  color: var(--primary-color);
+}
+
+.video-header p {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+/* ================ CONTROLS STYLES ================ */
+.video-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.875rem;
+}
+
+.search-box {
+  display: flex;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #333;
+  border-radius: 1.875rem 0 0 1.875rem;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.search-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0 1.5625rem;
+  border-radius: 0 1.875rem 1.875rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #4b4acf;
+}
+
+.category-filter {
+  display: flex;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-btn {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.category-btn.active,
+.category-btn:hover {
+  background-color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* ================ VIDEO LISTING STYLES ================ */
+.video-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
+  gap: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.video-item {
+  background-color: #111;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-item:hover {
+  transform: translateY(-0.3125rem);
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.3);
+}
+
+.video-thumbnail {
+  position: relative;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+  display: block;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(93, 93, 240, 0.7);
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.video-item:hover .play-icon {
+  opacity: 1;
+}
+
+.duration {
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.1875rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.video-info {
+  padding: 1.25rem;
+}
+
+.video-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.625rem;
+  line-height: 1.4;
+}
+
+.video-meta {
+  display: flex;
+  gap: 0.9375rem;
+  font-size: 0.8125rem;
+  color: #777;
+  margin-bottom: 0.625rem;
+}
+
+.video-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+
+.video-desc {
+  color: #bbb;
+  font-size: 0.875rem;
+  margin-bottom: 0.9375rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.watch-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.3125rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.watch-btn:hover {
+  background-color: #4b4acf;
+}
+
+.load-more {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* ================ VIDEO DETAIL STYLES ================ */
+.video-detail-container {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  color: #fff;
+}
+
+.video-main {
+  display: flex;
+  gap: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+
+.video-player {
+  flex: 2;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem;
+  border: none;
+}
+
+.video-detail-info {
+  flex: 1;
+}
+
+.video-detail-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.9375rem;
+  line-height: 1.3;
+}
+
+.video-meta {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  color: #aaa;
+  flex-wrap: wrap;
+}
+
+.video-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+
+.video-description {
+  background-color: #111;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.video-description h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.9375rem;
+  color: var(--primary-color);
+}
+
+.video-description p {
+  margin-bottom: 0.9375rem;
+  line-height: 1.6;
+}
+
+.video-description ul {
+  margin-bottom: 0.9375rem;
+  padding-left: 1.25rem;
+}
+
+.video-description li {
+  margin-bottom: 0.5rem;
+}
+
+.video-actions {
+  display: flex;
+  gap: 0.9375rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.like-btn, 
+.save-btn, 
+.share-btn {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.3125rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.like-btn:hover, 
+.save-btn:hover, 
+.share-btn:hover {
+  background-color: #333;
+}
+
+/* ================ RECOMMENDATIONS STYLES ================ */
+.video-recommendations h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.625rem;
+  border-bottom: 1px solid #333;
+}
+
+.recommendation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+  gap: 1.25rem;
+}
+
+.recommended-video {
+  background-color: #111;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.recommended-video:hover {
+  transform: translateY(-0.3125rem);
+}
+
+.recommended-video a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.rec-thumbnail {
+  position: relative;
+}
+
+.rec-thumbnail img {
+  width: 100%;
+  height: 8.75rem;
+  object-fit: cover;
+  display: block;
+}
+
+.rec-thumbnail .duration {
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.1875rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.recommended-video h3 {
+  font-size: 1rem;
+  margin: 0.625rem 0.9375rem 0.3125rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.rec-channel, 
+.rec-views {
+  display: block;
+  font-size: 0.75rem;
+  color: #aaa;
+  margin: 0 0.9375rem 0.625rem;
+}
+
+/* ================ RESPONSIVE STYLES ================ */
+@media (max-width: 75rem) { /* 1200px */
+  .video-main {
+    flex-direction: column;
+  }
+  
+  .video-player {
+    padding-bottom: 56.25%;
+  }
+}
+
+@media (max-width: 62rem) { /* 992px */
+  .video-listing {
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  }
+}
+
+@media (max-width: 48rem) { /* 768px */
+  .video-listing {
+    grid-template-columns: 1fr;
+  }
+  
+  .video-thumbnail img {
+    height: 15rem;
+  }
+  
+  .recommendation-list {
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  }
+}
+
+@media (max-width: 36rem) { /* 576px */
+  .video-header h1 {
+    font-size: 2rem;
+  }
+  
+  .video-controls {
+    align-items: center;
+  }
+  
+  .search-box {
+    width: 100%;
+  }
+  
+  .category-filter {
+    justify-content: flex-start;
+  }
+}

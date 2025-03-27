@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAVES - Wiki Musik</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/wiki-musik.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar-container">
+    <div>
+      <a href="../index.html"><img src="../images/logo.png" alt="" srcset="" class="logo"></a>
+    </div>
+
+    <div class="nav-link">
+      <a href="">Chord</a>
+      <a href="">Video Tutorial</a>
+      <a href="forum-diskusi.html">Forum Diskusi</a>
+      <a href="wiki-musik.html" class="active">Wiki Musik</a>
+      <a href="tentang-bantuan.html">Tentang Kami</a>
+      <a href="login.html">Masuk</a>
+    </div>
+  </div>
+
+  <div class="wiki-container">
+    <div class="wiki-header">
+      <h1>Wiki Musik</h1>
+      <p>Ensiklopedia pengetahuan musik terlengkap untuk musisi Indonesia</p>
+    </div>
+
+    <div class="wiki-tabs">
+      <button class="wiki-tab-btn active" data-tab="ensiklopedia">Ensiklopedia</button>
+      <button class="wiki-tab-btn" data-tab="artikel">Artikel</button>
+    </div>
+
+    <!-- Ensiklopedia Section -->
+    <div class="wiki-content active" id="ensiklopedia">
+      <div class="encyclopedia-nav">
+        <div class="nav-group">
+          <h3><i class="fas fa-music"></i> Teori Musik</h3>
+          <ul>
+            <li><a href="#">Notasi Musik</a></li>
+            <li><a href="#">Skala Dasar</a></li>
+            <li><a href="#">Interval Nada</a></li>
+            <li><a href="#">Harmoni Dasar</a></li>
+            <li><a href="#">Ritme dan Tempo</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <h3><i class="fas fa-guitar"></i> Teknik Bermain</h3>
+          <ul>
+            <li><a href="#">Teknik Strumming</a></li>
+            <li><a href="#">Fingerstyle Dasar</a></li>
+            <li><a href="#">Bending dan Vibrato</a></li>
+            <li><a href="#">Sweep Picking</a></li>
+            <li><a href="#">Slap Bass</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <h3><i class="fas fa-drum"></i> Alat Musik</h3>
+          <ul>
+            <li><a href="#">Jenis-jenis Gitar</a></li>
+            <li><a href="#">Piano dan Keyboard</a></li>
+            <li><a href="#">Perkusi Dasar</a></li>
+            <li><a href="#">Alat Musik Tradisional</a></li>
+            <li><a href="#">Efek dan Amplifier</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="featured-wiki">
+        <h2><i class="fas fa-star"></i> Ensiklopedia Pilihan</h2>
+        <div class="wiki-card">
+          <div class="wiki-card-header">
+            <span class="wiki-category">Teori Musik</span>
+            <h3>Memahami Circle of Fifths</h3>
+          </div>
+          <div class="wiki-card-content">
+            <img
+              src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+              alt="Circle of Fifths">
+            <div class="wiki-excerpt">
+              <p>Circle of Fifths (Lingkaran Quint) adalah diagram visual yang menunjukkan hubungan antara 12 nada dalam
+                musik Barat. Alat ini membantu musisi memahami:</p>
+              <ul>
+                <li>Hubungan antara nada mayor dan minor</li>
+                <li>Progresi chord alami</li>
+                <li>Transposisi lagu</li>
+                <li>Pembentukan scale</li>
+              </ul>
+              <a href="#" class="wiki-read-more">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artikel Section -->
+    <div class="wiki-content" id="artikel">
+      <div class="article-filters">
+        <button class="filter-btn active">Semua</button>
+        <button class="filter-btn">Teori Musik</button>
+        <button class="filter-btn">Alat Musik</button>
+        <button class="filter-btn">Panduan</button>
+      </div>
+
+      <div class="article-grid">
+        <!-- Artikel Teori Musik -->
+        <div class="article-card" data-category="teori">
+          <img
+            src="https://asset.kompas.com/crops/TvzHK7thBYvzH-7XrfjLgPktqAM=/0x0:1920x1280/1200x800/data/photo/2023/03/31/64269361f2371.jpg"
+            alt="Teori Musik">
+          <div class="article-info">
+            <span class="article-category">Teori Musik</span>
+            <h3>Sejarah Perkembangan Notasi Musik</h3>
+            <p class="article-excerpt">Tracing the evolution of musical notation from neumes to modern staff notation...
+            </p>
+            <div class="article-meta">
+              <span><i class="far fa-clock"></i> 15 Min Read</span>
+              <a href="#" class="read-article">Baca <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artikel Alat Musik -->
+        <div class="article-card" data-category="alat">
+          <img
+            src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Alat Musik">
+          <div class="article-info">
+            <span class="article-category">Alat Musik</span>
+            <h3>10 Gitar Akustik Terbaik untuk Pemula 2024</h3>
+            <p class="article-excerpt">Panduan memilih gitar akustik pertama dengan budget terbatas...</p>
+            <div class="article-meta">
+              <span><i class="far fa-clock"></i> 8 Min Read</span>
+              <a href="#" class="read-article">Baca <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artikel Panduan -->
+        <div class="article-card" data-category="panduan">
+          <img
+            src="https://awsimages.detik.net.id/community/media/visual/2023/02/25/ilustrasi-bermain-gitar_169.png?w=600&q=90"
+            alt="Panduan Gitar">
+          <div class="article-info">
+            <span class="article-category">Panduan</span>
+            <h3>7 Langkah Belajar Gitar dari Nol</h3>
+            <p class="article-excerpt">Struktur pembelajaran sistematis untuk pemula absolut...</p>
+            <div class="article-meta">
+              <span><i class="far fa-clock"></i> 12 Min Read</span>
+              <a href="#" class="read-article">Baca <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artikel Teori Musik 2 -->
+        <div class="article-card" data-category="teori">
+          <img
+            src="https://ampedstudio.com/wp-content/webp-express/webp-images/uploads/2022/01/chord-progressions.jpg.webp"
+            alt="Chord Progressions">
+          <div class="article-info">
+            <span class="article-category">Teori Musik</span>
+            <h3>Memahami Chord Progressions Populer</h3>
+            <p class="article-excerpt">Analisis progresi chord yang sering digunakan dalam musik pop dan rock...</p>
+            <div class="article-meta">
+              <span><i class="far fa-clock"></i> 10 Min Read</span>
+              <a href="#" class="read-article">Baca <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artikel Alat Musik 2 -->
+        <div class="article-card" data-category="alat">
+          <img
+            src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Piano">
+          <div class="article-info">
+            <span class="article-category">Alat Musik</span>
+            <h3>Digital Piano vs Keyboard: Mana yang Lebih Baik?</h3>
+            <p class="article-excerpt">Perbandingan mendetail untuk membantu Anda memilih...</p>
+            <div class="article-meta">
+              <span><i class="far fa-clock"></i> 7 Min Read</span>
+              <a href="#" class="read-article">Baca <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artikel Panduan 2 -->
+        <div class="article-card" data-category="panduan">
+          <img
+            src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Panduan Piano">
+          <div class="article-info">
+            <span class="article-category">Panduan</span>
+            <h3>Latihan Harian untuk Pemain Piano Pemula</h3>
+            <p class="article-excerpt">Rutinitas 30 menit sehari untuk membangun dasar yang kuat...</p>
+            <div class="article-meta">
+              <span><i class="far fa-clock"></i> 9 Min Read</span>
+              <a href="#" class="read-article">Baca <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more">
+        <button class="btn btn-secondary">Muat Lebih Banyak</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Tentang Waves</h3>
+        <p>Waves adalah platform untuk belajar musik, menemukan chord, dan berdiskusi dengan komunitas.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="tentang-bantuan.html#kontak">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/wiki-musik.js"></script>
+</body>
+
+</html>
