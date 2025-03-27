@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Until I Found You</title>
+    <link rel="stylesheet" href="css/Until_I_Found_You.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img src="images/logo.png" alt="Waves Logo" width="100">
+        </h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="music-container">
+        <div class="album-art">
+            <img id="album-art" src="images/album-cover.jpg" alt="Until I Found You - Stephen Sanchez">
+            <button class="like-btn">❤️</button>
+        </div>
+
+        <div class="music-info">
+            <h2>Until I Found You (Em Beihold Version)</h2>
+            <p>Stephen Sanchez & Em Beihold</p>
+
+            <audio id="audio">
+                <source src="music/Until I Found You (Em Beihold Version).mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio. 
+            </audio>
+
+            <div class="controls">
+                <button id="prev">&#9665;</button>
+                <button id="play">▶</button>
+                <button id="next">&#9655;</button>
+            </div>
+
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" value="0" min="0" max="100">
+                <span id="duration">--:--</span>
+            </div>
+
+            <div class="control-panel">
+                <button id="auto-scroll">Mulai Auto Scroll</button>
+                <label for="scroll-speed">Kecepatan:</label>
+                <select id="scroll-speed">
+                    <option value="2">Super Lambat</option>
+                    <option value="4">Lambat</option>
+                    <option value="8">Sedang</option>
+                    <option value="16">Cepat</option>
+                    <option value="32">Sangat Cepat</option>
+                    <option value="64">Gila</option>
+                </select>
+            </div>
+        
+            <script src="js/scroll.js"></script>
+        </div>
+    </div>
+
+    <div class="lyrics">
+        <p class="section">Intro:</p>
+        <div class="chord-line"><span class="chord">C..Em..F..Fm</span></div>
+    
+        <div class="chord-line">
+            <span class="chord">C</span>
+            <span class="text">Mutia,</span>
+        </div>
+        <div class="chord-line">
+            <span class="chord">Em</span>
+            <span class="text">Wrap me up in all your Love</span>
+        </div>
+        <div class="chord-line">
+            <span class="chord">C</span>
+            <span class="text">I want you</span>
+        </div>
+        <div class="chord-line">
+            <span class="chord">Em</span>
+            <span class="text">In my arms Oh, let me</span>
+        </div>
+        <div class="chord-line">
+            <span class="chord">C</span>
+            <span class="text">Hold you</span>
+        </div>
+        <div class="chord-line">
+            <span class="chord">Em                C</span>
+            <span class="text">I'll never let you go again</span>
+        </div>
+        <div class="chord-line">
+            <span class="chord">C</span>
+            <span class="text">Like I did</span>
+        </div>
+        <div class="chord-line">
+            <span class="chord">G</span>
+            <span class="text">Oh, I used to say</span>
+        </div>
+    
+        <p class="section">Reff:</p>
+        <div class="chord-line">
+            <span class="chord">      F           G          C     Em</span>
+            <span class="text">I would never fall in love again until I found her</span>
+        </div>
+        <div class="chord-line">
+            <span class="chord">      F           G          C     C7</span>
+            <span class="text">I said, "I would never fall unless it's you I fall into"</span>
+        </div>
+        <div class="chord-line">
+            <span class="chord">      F           G          C     Em</span>
+            <span class="text">I was lost within the darkness but then I found her</span>
+        </div>
+        <div class="chord-line">
+            <span class="chord">        F....Fm</span>
+            <span class="text">I found you....(Music)</span>
+        </div>
+    
+        <p class="section">Outro:</p>
+        <div class="chord-line"><span class="chord">C</span></div>
+    
+    </div>
+    
+    
+
+    <script src="js/Until_I_Found_You.js"></script>
+</body>
+</html>

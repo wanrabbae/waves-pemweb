@@ -104,11 +104,78 @@ nav a {
 
 /* Lyrics */
 .lyrics {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .chord {
     color: orange;
     font-weight: bold;
+    font-family: monospace;
+    white-space: pre;
+}
+body {
+    background-color: #121212;
+    color: #E8E8E8;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    line-height: 1.5;
+}
+.lyrics {
+    font-size: 18px;
+    white-space: pre-line;
+}
+.section {
+    font-weight: bold;
+    color: #f4a261;
+    margin-top: 3px;
+}
+.chord-line {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+}
+.chord {
+    color: #f4c542;
+    font-weight: bold;
+    font-family: monospace;
+    white-space: pre;
+}
+.text {
+    margin-top: -3px;
+}
+body {
+    height: 200vh; /* Biar ada yang bisa discroll */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.control-panel {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button, select {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    background: #f4a261;
+    color: white;
+    border-radius: 5px;
+}
+
+select {
+    background: white;
 }
