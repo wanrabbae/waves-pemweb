@@ -21,7 +21,7 @@
 
     <div class="music-container">
         <div class="album-art">
-            <img src="album-cover.jpg" alt="Until I Found You - Stephen Sanchez">
+            <img id="album-art" src="album-cover.jpg" alt="Until I Found You - Stephen Sanchez">
             <button class="like-btn">❤️</button>
         </div>
 
@@ -29,18 +29,21 @@
             <h2>Until I Found You</h2>
             <p>Stephen Sanchez</p>
 
-            <audio id="audio" src="until_i_found_you.mp3"></audio>
+            <audio id="audio">
+                <source src="music/Until_I_Found_You.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio. 
+            </audio>
 
             <div class="controls">
                 <button id="prev">&#9665;</button>
-                <button id="play">&#9654;</button>
+                <button id="play">▶</button>
                 <button id="next">&#9655;</button>
             </div>
 
             <div class="progress-container">
                 <span id="current-time">0:00</span>
-                <input type="range" id="progress-bar" value="0">
-                <span id="duration">2:57</span>
+                <input type="range" id="progress-bar" value="0" min="0" max="100">
+                <span id="duration">--:--</span>
             </div>
 
             <button id="auto-scroll">Auto Scroll</button>
