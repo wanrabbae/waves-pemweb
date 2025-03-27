@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAVES - Forum Diskusi</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/forum-diskusi.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar-container">
+    <div>
+      <a href="../index.html"><img src="../images/logo.png" alt="" srcset="" class="logo"></a>
+    </div>
+
+    <div class="nav-link">
+      <a href="">Chord</a>
+      <a href="">Video Tutorial</a>
+      <a href="forum-diskusi.html" class="active">Forum</a>
+      <a href="">Wiki Musik</a>
+      <a href="tentang-bantuan.html">Tentang Kami</a>
+      <a href="login.html">Masuk</a>
+    </div>
+  </div>
+
+  <div class="forum-container">
+    <div class="forum-header">
+      <h1>Forum Diskusi</h1>
+      <p>Berbagi pengetahuan, bertanya, dan berdiskusi dengan komunitas musisi lainnya</p>
+    </div>
+
+    <div class="forum-content">
+      <!-- Left Column - Create Thread Form -->
+      <div class="create-thread-column">
+        <div class="create-thread-box">
+          <h2><i class="fas fa-plus-circle"></i> Buat Thread Baru</h2>
+          <form class="thread-form">
+            <div class="form-group">
+              <label for="thread-title">Judul Thread</label>
+              <input type="text" id="thread-title" name="thread-title" placeholder="Masukkan judul thread" required>
+            </div>
+
+            <div class="form-group">
+              <label for="thread-category">Kategori</label>
+              <select id="thread-category" name="thread-category" required>
+                <option value="">Pilih kategori</option>
+                <option value="teknik">Teknik Bermain</option>
+                <option value="rekomendasi">Rekomendasi Lagu</option>
+                <option value="peralatan">Peralatan Musik</option>
+                <option value="teori">Teori Musik</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="thread-content">Isi Diskusi</label>
+              <textarea id="thread-content" name="thread-content" rows="8"
+                placeholder="Tulis isi thread Anda di sini..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="submit-btn">Posting Thread</button>
+              <button type="button" class="cancel-btn">Batal</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Column - Thread List -->
+      <div class="thread-list-column">
+        <div class="thread-list-header">
+          <h2><i class="fas fa-comments"></i> Thread Terbaru</h2>
+          <div class="thread-filter">
+            <select id="category-filter">
+              <option value="all">Semua Kategori</option>
+              <option value="teknik">Teknik Bermain</option>
+              <option value="rekomendasi">Rekomendasi Lagu</option>
+              <option value="peralatan">Peralatan Musik</option>
+              <option value="teori">Teori Musik</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="thread-list">
+          <!-- Thread Item 1 -->
+          <div class="thread-item" data-category="teknik">
+            <div class="thread-category">
+              <span class="category-badge teknik">Teknik Bermain</span>
+              <span class="thread-date">2 jam lalu</span>
+            </div>
+            <h3 class="thread-title">Bagaimana cara meningkatkan speed picking pada gitar?</h3>
+            <p class="thread-excerpt">Saya sudah berlatih selama 3 bulan tapi masih kesulitan dengan speed picking yang
+              konsisten...</p>
+            <div class="thread-meta">
+              <span class="thread-author"><i class="fas fa-user"></i> BudiGitaris</span>
+              <span class="thread-replies"><i class="fas fa-comment"></i> 12 balasan</span>
+            </div>
+          </div>
+
+          <!-- Thread Item 2 -->
+          <div class="thread-item" data-category="rekomendasi">
+            <div class="thread-category">
+              <span class="category-badge rekomendasi">Rekomendasi Lagu</span>
+              <span class="thread-date">5 jam lalu</span>
+            </div>
+            <h3 class="thread-title">Rekomendasi lagu untuk latihan fingerstyle pemula</h3>
+            <p class="thread-excerpt">Ada yang bisa rekomendasikan lagu-lagu mudah untuk latihan fingerstyle bagi
+              pemula?</p>
+            <div class="thread-meta">
+              <span class="thread-author"><i class="fas fa-user"></i> AniPemula</span>
+              <span class="thread-replies"><i class="fas fa-comment"></i> 8 balasan</span>
+            </div>
+          </div>
+
+          <!-- Thread Item 3 -->
+          <div class="thread-item" data-category="peralatan">
+            <div class="thread-category">
+              <span class="category-badge peralatan">Peralatan Musik</span>
+              <span class="thread-date">1 hari lalu</span>
+            </div>
+            <h3 class="thread-title">Review amplifier Boss Katana 50</h3>
+            <p class="thread-excerpt">Baru saja membeli amp Boss Katana 50, ingin berbagi pengalaman setelah menggunakan
+              selama 2 minggu...</p>
+            <div class="thread-meta">
+              <span class="thread-author"><i class="fas fa-user"></i> RudiAmp</span>
+              <span class="thread-replies"><i class="fas fa-comment"></i> 24 balasan</span>
+            </div>
+          </div>
+
+          <!-- Thread Item 4 -->
+          <div class="thread-item" data-category="teori">
+            <div class="thread-category">
+              <span class="category-badge teori">Teori Musik</span>
+              <span class="thread-date">2 hari lalu</span>
+            </div>
+            <h3 class="thread-title">Memahami circle of fifths untuk komposisi lagu</h3>
+            <p class="thread-excerpt">Ada yang bisa jelaskan cara praktis memahami dan menerapkan circle of fifths dalam
+              menulis lagu?</p>
+            <div class="thread-meta">
+              <span class="thread-author"><i class="fas fa-user"></i> KomposerMuda</span>
+              <span class="thread-replies"><i class="fas fa-comment"></i> 15 balasan</span>
+            </div>
+          </div>
+
+          <!-- Thread Item 5 -->
+          <div class="thread-item" data-category="teknik">
+            <div class="thread-category">
+              <span class="category-badge teknik">Teknik Bermain</span>
+              <span class="thread-date">3 hari lalu</span>
+            </div>
+            <h3 class="thread-title">Teknik palm muting yang benar pada gitar elektrik</h3>
+            <p class="thread-excerpt">Sering mendengar istilah palm muting tapi belum paham betul cara melakukannya
+              dengan benar...</p>
+            <div class="thread-meta">
+              <span class="thread-author"><i class="fas fa-user"></i> MetalGitar</span>
+              <span class="thread-replies"><i class="fas fa-comment"></i> 18 balasan</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="thread-pagination">
+          <button class="pagination-btn active">1</button>
+          <button class="pagination-btn">2</button>
+          <button class="pagination-btn">3</button>
+          <button class="pagination-btn next-btn">Next <i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Tentang Waves</h3>
+        <p>Waves adalah platform untuk belajar musik, menemukan chord, dan berdiskusi dengan komunitas.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="tentang-bantuan.html#kontak">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/forum-diskusi.js"></script>
+</body>
+
+</html>

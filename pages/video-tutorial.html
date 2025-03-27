@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAVES - Video Tutorial</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/video-tutorial.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar-container">
+    <div>
+      <a href="../index.html"><img src="../images/logo.png" alt="" srcset="" class="logo"></a>
+    </div>
+
+    <div class="nav-link">
+      <a href="">Chord</a>
+      <a href="video-tutorial.html" class="active">Video Tutorial</a>
+      <a href="forum-diskusi.html">Forum Diskusi</a>
+      <a href="wiki-musik.html">Wiki Musik</a>
+      <a href="tentang-bantuan.html">Tentang Kami</a>
+      <a href="login.html">Masuk</a>
+    </div>
+  </div>
+
+  <div class="video-tutorial-container">
+    <div class="video-header">
+      <h1>Video Tutorial</h1>
+      <p>Belajar musik melalui video tutorial dari musisi berpengalaman</p>
+    </div>
+
+    <!-- Search and Filter Section -->
+    <div class="video-controls">
+      <div class="search-box">
+        <input type="text" placeholder="Cari video tutorial..." class="search-input">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="category-filter">
+        <button class="category-btn active">Semua</button>
+        <button class="category-btn">Gitar</button>
+        <button class="category-btn">Piano</button>
+        <button class="category-btn">Drum</button>
+        <button class="category-btn">Bass</button>
+        <button class="category-btn">Vokal</button>
+      </div>
+    </div>
+
+    <!-- Video Listing Section -->
+    <div class="video-listing">
+
+      <!-- Video Item 4 -->
+      <div class="video-item" data-category="gitar">
+        <div class="video-thumbnail">
+          <img src="https://i.ytimg.com/vi/ALkZgF9mYOk/maxresdefault.jpg" alt="Teknik Fingerstyle">
+          <div class="play-icon"><i class="fas fa-play"></i></div>
+          <span class="duration">22:15</span>
+        </div>
+        <div class="video-info">
+          <h3>Fingerstyle Gitar untuk Pemula</h3>
+          <div class="video-meta">
+            <span><i class="fas fa-user"></i> Fingerstyle ID</span>
+            <span><i class="fas fa-eye"></i> 210K views</span>
+          </div>
+          <p class="video-desc">Teknik dasar fingerstyle dan latihan pola sederhana...</p>
+          <a href="video-detail.html?id=4" class="watch-btn">Tonton Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Video Item 5 -->
+      <div class="video-item" data-category="vokal">
+        <div class="video-thumbnail">
+          <img src="https://i.ytimg.com/vi/j0JK3-s0fTs/maxresdefault.jpg" alt="Teknik Vokal">
+          <div class="play-icon"><i class="fas fa-play"></i></div>
+          <span class="duration">14:08</span>
+        </div>
+        <div class="video-info">
+          <h3>Latihan Pernapasan untuk Penyanyi</h3>
+          <div class="video-meta">
+            <span><i class="fas fa-user"></i> VokalPlus</span>
+            <span><i class="fas fa-eye"></i> 78K views</span>
+          </div>
+          <p class="video-desc">Teknik pernapasan diafragma dan latihan untuk meningkatkan vokal...</p>
+          <a href="video-detail.html?id=5" class="watch-btn">Tonton Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Video Item 6 -->
+      <div class="video-item" data-category="bass">
+        <div class="video-thumbnail">
+          <img src="https://i.ytimg.com/vi/MLkFwlh7Zeo/maxresdefault.jpg" alt="Belajar Bass">
+          <div class="play-icon"><i class="fas fa-play"></i></div>
+          <span class="duration">16:45</span>
+        </div>
+        <div class="video-info">
+          <h3>Teknik Slap Bass Dasar</h3>
+          <div class="video-meta">
+            <span><i class="fas fa-user"></i> BassLovers</span>
+            <span><i class="fas fa-eye"></i> 95K views</span>
+          </div>
+          <p class="video-desc">Pengenalan teknik slap dan pop untuk pemain bass pemula...</p>
+          <a href="video-detail.html?id=6" class="watch-btn">Tonton Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Video Item 1 -->
+      <div class="video-item" data-category="gitar">
+        <div class="video-thumbnail">
+          <img src="https://i.ytimg.com/vi/2AoxCkySv34/maxresdefault.jpg" alt="Belajar Gitar Dasar">
+          <div class="play-icon"><i class="fas fa-play"></i></div>
+          <span class="duration">12:45</span>
+        </div>
+        <div class="video-info">
+          <h3>Belajar Gitar Dasar untuk Pemula - Part 1</h3>
+          <div class="video-meta">
+            <span><i class="fas fa-user"></i> GitarKu Channel</span>
+            <span><i class="fas fa-eye"></i> 125K views</span>
+          </div>
+          <p class="video-desc">Pelajari chord dasar dan teknik strumming untuk pemula...</p>
+          <a href="video-detail.html?id=1" class="watch-btn">Tonton Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Video Item 2 -->
+      <div class="video-item" data-category="piano">
+        <div class="video-thumbnail">
+          <img src="https://i.ytimg.com/vi/7DI6vwQvLdo/maxresdefault.jpg" alt="Belajar Piano Dasar">
+          <div class="play-icon"><i class="fas fa-play"></i></div>
+          <span class="duration">15:30</span>
+        </div>
+        <div class="video-info">
+          <h3>5 Lagu Mudah untuk Pemula Piano</h3>
+          <div class="video-meta">
+            <span><i class="fas fa-user"></i> Piano Master</span>
+            <span><i class="fas fa-eye"></i> 89K views</span>
+          </div>
+          <p class="video-desc">Tutorial lagu-lagu sederhana yang bisa dipelajari dalam 1 hari...</p>
+          <a href="video-detail.html?id=2" class="watch-btn">Tonton Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Video Item 3 -->
+      <div class="video-item" data-category="drum">
+        <div class="video-thumbnail">
+          <img src="https://i.ytimg.com/vi/9ESJG6_2Z_g/maxresdefault.jpg" alt="Belajar Drum Dasar">
+          <div class="play-icon"><i class="fas fa-play"></i></div>
+          <span class="duration">18:22</span>
+        </div>
+        <div class="video-info">
+          <h3>Teknik Dasar Drum untuk Pemula</h3>
+          <div class="video-meta">
+            <span><i class="fas fa-user"></i> DrumPro</span>
+            <span><i class="fas fa-eye"></i> 156K views</span>
+          </div>
+          <p class="video-desc">Pelajari pola dasar drum dan latihan rutin untuk meningkatkan skill...</p>
+          <a href="video-detail.html?id=3" class="watch-btn">Tonton Sekarang</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="load-more">
+      <button class="btn btn-secondary">Muat Lebih Banyak</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Tentang Waves</h3>
+        <p>Waves adalah platform untuk belajar musik, menemukan chord, dan berdiskusi dengan komunitas.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="tentang-bantuan.html#kontak">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/video-tutorial.js"></script>
+</body>
+
+</html>

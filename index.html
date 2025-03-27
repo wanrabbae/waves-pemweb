@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/utils.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/forum-diskusi.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>WAVES - Home Page</title>
 </head>
 
@@ -18,9 +20,9 @@
 
     <div class="nav-link">
       <a href="">Chord</a>
-      <a href="">Video Tutorial</a>
-      <a href="">Forum</a>
-      <a href="">Wiki Musik</a>
+      <a href="pages/video-tutorial.html">Video Tutorial</a>
+      <a href="pages/forum-diskusi.html">Forum</a>
+      <a href="pages/wiki-musik.html">Wiki Musik</a>
       <a href="pages/tentang-bantuan.html">Tentang Kami</a>
       <a href="pages/login.html">Masuk</a>
     </div>
@@ -44,8 +46,9 @@
   <section class="find-music" id="Jelajahi">
     <div class="find-music-container">
       <h2>Temukan Musik Chord Favoritmu</h2>
-      <div class="search-container">
-        <input type="text" placeholder="Cari Chord Musik Favoritmu" class="search-input">
+      <div class="search-box">
+        <input type="text" placeholder="Cari Chord Musik Favoritmu..." class="search-input">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
       </div>
       <div class="genre-slider">
         <div class="slider-container">
@@ -131,19 +134,51 @@
     <!-- Diskusi Terbaru -->
     <section class="forum-discussion">
       <h2>Diskusi Terbaru</h2>
-      <div class="forum-list">
-        <a href="">
-          <div class="forum-item">
-            <p><strong>Apakah chord minor lebih emosional?</strong></p>
-            <span>Oleh: Rizky - 10 Menit Lalu</span>
+      <div class="thread-list">
+        <!-- Thread Item 1 -->
+        <div class="thread-item" data-category="teknik">
+          <div class="thread-category">
+            <span class="category-badge teknik">Teknik Bermain</span>
+            <span class="thread-date">2 jam lalu</span>
           </div>
-        </a>
-        <a href="">
-          <div class="forum-item">
-            <p><strong>Rekomendasi gitar akustik terbaik?</strong></p>
-            <span>Oleh: Alwan - 1 Jam Lalu</span>
+          <h3 class="thread-title">Bagaimana cara meningkatkan speed picking pada gitar?</h3>
+          <p class="thread-excerpt">Saya sudah berlatih selama 3 bulan tapi masih kesulitan dengan speed picking yang
+            konsisten...</p>
+          <div class="thread-meta">
+            <span class="thread-author"><i class="fas fa-user"></i> BudiGitaris</span>
+            <span class="thread-replies"><i class="fas fa-comment"></i> 12 balasan</span>
           </div>
-        </a>
+        </div>
+
+        <!-- Thread Item 2 -->
+        <div class="thread-item" data-category="rekomendasi">
+          <div class="thread-category">
+            <span class="category-badge rekomendasi">Rekomendasi Lagu</span>
+            <span class="thread-date">5 jam lalu</span>
+          </div>
+          <h3 class="thread-title">Rekomendasi lagu untuk latihan fingerstyle pemula</h3>
+          <p class="thread-excerpt">Ada yang bisa rekomendasikan lagu-lagu mudah untuk latihan fingerstyle bagi
+            pemula?</p>
+          <div class="thread-meta">
+            <span class="thread-author"><i class="fas fa-user"></i> AniPemula</span>
+            <span class="thread-replies"><i class="fas fa-comment"></i> 8 balasan</span>
+          </div>
+        </div>
+
+        <!-- Thread Item 3 -->
+        <div class="thread-item" data-category="peralatan">
+          <div class="thread-category">
+            <span class="category-badge peralatan">Peralatan Musik</span>
+            <span class="thread-date">1 hari lalu</span>
+          </div>
+          <h3 class="thread-title">Review amplifier Boss Katana 50</h3>
+          <p class="thread-excerpt">Baru saja membeli amp Boss Katana 50, ingin berbagi pengalaman setelah menggunakan
+            selama 2 minggu...</p>
+          <div class="thread-meta">
+            <span class="thread-author"><i class="fas fa-user"></i> RudiAmp</span>
+            <span class="thread-replies"><i class="fas fa-comment"></i> 24 balasan</span>
+          </div>
+        </div>
       </div>
 
       <a href="" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat Semua</a>
@@ -152,30 +187,54 @@
     <!-- Artikel Musik Pilihan -->
     <section class="wiki-articles">
       <h2>Artikel Musik Pilihan</h2>
-      <div class="article-list">
-        <div class="article-item">
+      <div class="article-grid">
+        <!-- Artikel Teori Musik -->
+        <div class="article-card" data-category="teori">
           <img
             src="https://asset.kompas.com/crops/TvzHK7thBYvzH-7XrfjLgPktqAM=/0x0:1920x1280/1200x800/data/photo/2023/03/31/64269361f2371.jpg"
-            alt="Rock Music">
-          <h3>Sejarah Musik Rock</h3>
-          <p>Musik rock berasal dari perpaduan musik blues dan country di tahun 1950-an...</p>
-          <a href="#">Baca Selengkapnya</a>
+            alt="Teori Musik">
+          <div class="article-info">
+            <span class="article-category">Teori Musik</span>
+            <h3>Sejarah Perkembangan Notasi Musik</h3>
+            <p class="article-excerpt">Tracing the evolution of musical notation from neumes to modern staff notation...
+            </p>
+            <div class="article-meta">
+              <span><i class="far fa-clock"></i> 15 Min Read</span>
+              <a href="#" class="read-article">Baca <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="article-item">
+
+        <!-- Artikel Alat Musik -->
+        <div class="article-card" data-category="alat">
+          <img
+            src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            alt="Alat Musik">
+          <div class="article-info">
+            <span class="article-category">Alat Musik</span>
+            <h3>10 Gitar Akustik Terbaik untuk Pemula 2024</h3>
+            <p class="article-excerpt">Panduan memilih gitar akustik pertama dengan budget terbatas...</p>
+            <div class="article-meta">
+              <span><i class="far fa-clock"></i> 8 Min Read</span>
+              <a href="#" class="read-article">Baca <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artikel Panduan -->
+        <div class="article-card" data-category="panduan">
           <img
             src="https://awsimages.detik.net.id/community/media/visual/2023/02/25/ilustrasi-bermain-gitar_169.png?w=600&q=90"
-            alt="Rock Music">
-          <h3>Bagaimana Chord Dibentuk?</h3>
-          <p>Chord dalam musik adalah kumpulan nada yang dimainkan secara bersamaan...</p>
-          <a href="#">Baca Selengkapnya</a>
-        </div>
-        <div class="article-item">
-          <img
-            src="https://ampedstudio.com/wp-content/webp-express/webp-images/uploads/2022/01/chord-progressions.jpg.webp"
-            alt="Rock Music">
-          <h3>Chords Progression dalam Musik</h3>
-          <p>Chord progression adalah urutan akord yang digunakan dalam musik...</p>
-          <a href="#">Baca Selengkapnya</a>
+            alt="Panduan Gitar">
+          <div class="article-info">
+            <span class="article-category">Panduan</span>
+            <h3>7 Langkah Belajar Gitar dari Nol</h3>
+            <p class="article-excerpt">Struktur pembelajaran sistematis untuk pemula absolut...</p>
+            <div class="article-meta">
+              <span><i class="far fa-clock"></i> 12 Min Read</span>
+              <a href="#" class="read-article">Baca <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
       </div>
 

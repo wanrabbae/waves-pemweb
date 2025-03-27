@@ -1,0 +1,230 @@
+@import url('utils.css');
+
+/* Wiki Musik Page Styles */
+.wiki-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.wiki-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wiki-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.wiki-header p {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.wiki-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.wiki-tab-btn {
+  background: none;
+  border: none;
+  padding: 10px 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #aaa;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.wiki-tab-btn.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.wiki-tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.wiki-content {
+  display: none;
+}
+
+.wiki-content.active {
+  display: block;
+}
+
+/* Ensiklopedia Styles */
+.encyclopedia-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.nav-group {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.nav-group h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.nav-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-group li {
+  margin-bottom: 10px;
+}
+
+.nav-group a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid #222;
+}
+
+.nav-group a:hover {
+  color: var(--primary-color);
+  padding-left: 5px;
+}
+
+.featured-wiki {
+  margin-top: 40px;
+}
+
+.featured-wiki h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.featured-wiki h2 i {
+  color: var(--primary-color);
+}
+
+.wiki-card {
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.wiki-card-header {
+  padding: 20px;
+  border-bottom: 1px solid #222;
+}
+
+.wiki-category {
+  background-color: rgba(93, 93, 240, 0.2);
+  color: var(--primary-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.wiki-card-header h3 {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+.wiki-card-content {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+}
+
+.wiki-card-content img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.wiki-excerpt {
+  flex: 1;
+}
+
+.wiki-excerpt p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.wiki-excerpt ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.wiki-excerpt li {
+  margin-bottom: 8px;
+}
+
+.wiki-read-more {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wiki-read-more:hover {
+  text-decoration: underline;
+}
+
+/* Artikel Styles */
+.article-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn.active {
+  background-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.filter-btn:hover:not(.active) {
+  background-color: #333;
+}
