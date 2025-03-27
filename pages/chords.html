@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAVES - Daftar Chord Lagu</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/chords.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar-container">
+    <div>
+      <a href="../index.html"><img src="../images/logo.png" alt="" srcset="" class="logo"></a>
+    </div>
+
+    <div class="nav-link">
+      <a href="chords.html" class="active">Chord</a>
+      <a href="video-tutorial.html">Video Tutorial</a>
+      <a href="forum-diskusi.html">Forum Diskusi</a>
+      <a href="wiki-musik.html">Wiki Musik</a>
+      <a href="tentang-bantuan.html">Tentang Kami</a>
+      <a href="login.html">Masuk</a>
+    </div>
+  </div>
+
+  <div class="chords-container">
+    <div class="chords-header">
+      <h1>Daftar Chord Lagu</h1>
+      <p>Temukan chord lagu favoritmu dari berbagai genre dan artis</p>
+    </div>
+
+    <!-- Search and Filter Section -->
+    <div class="chords-controls">
+      <div class="search-box">
+        <input type="text" placeholder="Cari judul lagu atau artis..." class="search-input">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="category-filter">
+        <button class="category-btn active">Semua</button>
+        <button class="category-btn">Pop</button>
+        <button class="category-btn">Rock</button>
+        <button class="category-btn">Jazz</button>
+        <button class="category-btn">Dangdut</button>
+        <button class="category-btn">Reggae</button>
+      </div>
+    </div>
+
+    <!-- Chords Listing Section -->
+    <div class="chords-listing">
+      <!-- Chord Item 1 -->
+      <div class="chord-item" data-category="pop" data-difficulty="easy">
+        <div class="chord-image">
+          <img src="https://i.scdn.co/image/ab67616d0000b273164feb363334f93b6458d2a9" alt="Someone Like You">
+          <span class="difficulty-badge easy">Mudah</span>
+        </div>
+        <div class="chord-info">
+          <h3>Someone Like You</h3>
+          <div class="chord-meta">
+            <span><i class="fas fa-user"></i> Adele</span>
+            <span><i class="fas fa-clock"></i> 4:45</span>
+            <span><i class="fas fa-music"></i> Pop</span>
+          </div>
+          <div class="chord-actions">
+            <button class="play-btn"><i class="fas fa-play"></i> Play</button>
+            <button class="save-btn"><i class="far fa-bookmark"></i> Simpan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chord Item 2 -->
+      <div class="chord-item" data-category="rock" data-difficulty="medium">
+        <div class="chord-image">
+          <img
+            src="https://cdn1-production-images-kly.akamaized.net/Yn8UX6o_8z4mOcypHLf8DssG1BQ=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2400434/original/084833400_1541404684-qb.jpg"
+            alt="Bohemian Rhapsody">
+          <span class="difficulty-badge medium">Menengah</span>
+        </div>
+        <div class="chord-info">
+          <h3>Bohemian Rhapsody</h3>
+          <div class="chord-meta">
+            <span><i class="fas fa-user"></i> Queen</span>
+            <span><i class="fas fa-clock"></i> 5:55</span>
+            <span><i class="fas fa-music"></i> Rock</span>
+          </div>
+          <div class="chord-actions">
+            <button class="play-btn"><i class="fas fa-play"></i> Play</button>
+            <button class="save-btn"><i class="far fa-bookmark"></i> Simpan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chord Item 3 -->
+      <div class="chord-item" data-category="jazz" data-difficulty="hard">
+        <div class="chord-image">
+          <img src="https://i.scdn.co/image/ab67616d0000b2738792c3e96f8ab97a767c5d0c" alt="Until I Found You">
+          <span class="difficulty-badge hard">Sulit</span>
+        </div>
+        <div class="chord-info">
+          <h3>Until I Found You</h3>
+          <div class="chord-meta">
+            <span><i class="fas fa-user"></i> Frank Sinatra</span>
+            <span><i class="fas fa-clock"></i> 3:30</span>
+            <span><i class="fas fa-music"></i> Jazz</span>
+          </div>
+          <div class="chord-actions">
+            <a href="./chords-detail.html" class="play-btn"><i class="fas fa-play"></i> Play</a>
+            <button class="save-btn"><i class="far fa-bookmark"></i> Simpan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chord Item 4 -->
+      <div class="chord-item" data-category="pop" data-difficulty="easy">
+        <div class="chord-image">
+          <img src="https://i.scdn.co/image/ab67616d0000b273b3be3b970fc89a02f301c9da" alt="Perfect">
+          <span class="difficulty-badge easy">Mudah</span>
+        </div>
+        <div class="chord-info">
+          <h3>Perfect</h3>
+          <div class="chord-meta">
+            <span><i class="fas fa-user"></i> Ed Sheeran</span>
+            <span><i class="fas fa-clock"></i> 4:23</span>
+            <span><i class="fas fa-music"></i> Pop</span>
+          </div>
+          <div class="chord-actions">
+            <button class="play-btn"><i class="fas fa-play"></i> Play</button>
+            <button class="save-btn"><i class="far fa-bookmark"></i> Simpan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chord Item 5 -->
+      <div class="chord-item" data-category="dangdut" data-difficulty="medium">
+        <div class="chord-image">
+          <img src="https://i.ytimg.com/vi/_Bfc-8Wx5gE/maxresdefault.jpg" alt="Sakitnya Tuh Disini">
+          <span class="difficulty-badge medium">Menengah</span>
+        </div>
+        <div class="chord-info">
+          <h3>Sakitnya Tuh Disini</h3>
+          <div class="chord-meta">
+            <span><i class="fas fa-user"></i> Cita Citata</span>
+            <span><i class="fas fa-clock"></i> 3:45</span>
+            <span><i class="fas fa-music"></i> Dangdut</span>
+          </div>
+          <div class="chord-actions">
+            <button class="play-btn"><i class="fas fa-play"></i> Play</button>
+            <button class="save-btn"><i class="far fa-bookmark"></i> Simpan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chord Item 6 -->
+      <div class="chord-item" data-category="reggae" data-difficulty="easy">
+        <div class="chord-image">
+          <img src="https://i.scdn.co/image/ab67616d0000b2738a6dbac0b74bd2484189ea5f" alt="Red Red Wine">
+          <span class="difficulty-badge easy">Mudah</span>
+        </div>
+        <div class="chord-info">
+          <h3>Red Red Wine</h3>
+          <div class="chord-meta">
+            <span><i class="fas fa-user"></i> UB40</span>
+            <span><i class="fas fa-clock"></i> 3:03</span>
+            <span><i class="fas fa-music"></i> Reggae</span>
+          </div>
+          <div class="chord-actions">
+            <button class="play-btn"><i class="fas fa-play"></i> Play</button>
+            <button class="save-btn"><i class="far fa-bookmark"></i> Simpan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="load-more">
+      <button class="btn btn-secondary">Muat Lebih Banyak</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Tentang Waves</h3>
+        <p>Waves adalah platform untuk belajar musik, menemukan chord, dan berdiskusi dengan komunitas.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="tentang-bantuan.html#faq">FAQ</a></li>
+          <li><a href="tentang-bantuan.html#kontak">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/chords.js"></script>
+</body>
+
+</html>

@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player - Until I Found You</title>
-    <link rel="stylesheet" href="css/Until_I_Found_You.css">
+    <link rel="stylesheet" href="../css/Until_I_Found_You.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>
-            <img src="images/logo.png" alt="Waves Logo" width="150">
-        </h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Sign Up</a>
-        </nav>
-    </header>
+    <div class="navbar-container">
+        <div>
+            <a href="../index.html"><img src="../images/logo.png" alt="" srcset="" class="logo"></a>
+        </div>
+
+        <div class="nav-link">
+            <a href="./chords.html" class="active">Chord</a>
+            <a href="./video-tutorial.html">Video Tutorial</a>
+            <a href="./forum-diskusi.html">Forum Diskusi</a>
+            <a href="./wiki-musik.html">Wiki Musik</a>
+            <a href="./tentang-bantuan.html">Tentang Kami</a>
+            <a href="./login.html">Masuk</a>
+        </div>
+    </div>
 
     <div class="music-container">
         <div class="album-art">
-            <img id="album-art" src="images/Picture_Album_Until_I_Found_You.jpg" alt="Until I Found You - Stephen Sanchez">
+            <img id="album-art" src="../images/Picture_Album_Until_I_Found_You.jpg"
+                alt="Until I Found You - Stephen Sanchez">
             <button class="like-btn">❤️</button>
         </div>
 
         <div class="music-info">
             <h2>Until I Found You</h2>
             <p>Stephen Sanchez & Em Beihold</p>
-
+            <button class="save-btn"><i class="far fa-bookmark"></i> Simpan</button>
             <audio id="audio">
-                <source src="music/Until I Found You (Em Beihold Version).mp3" type="audio/mpeg">
-                Browser Anda tidak mendukung elemen audio. 
+                <source src="../music/Until I Found You (Em Beihold Version).mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
             </audio>
 
             <div class="controls">
@@ -58,7 +67,7 @@
                     <option value="64">Gila</option>
                 </select>
             </div>
-        
+
             <script src="js/scroll.js"></script>
         </div>
     </div>
@@ -66,7 +75,7 @@
     <div class="lyrics">
         <p class="section">Intro:</p>
         <div class="chord-line"><span class="chord">C..Em..F..Fm</span></div>
-    
+
         <div class="chord-line">
             <span class="chord">C</span>
             <span class="text">Georgia,</span>
@@ -88,7 +97,7 @@
             <span class="text">Hold you</span>
         </div>
         <div class="chord-line">
-            <span class="chord">Em                C</span>
+            <span class="chord">Em C</span>
             <span class="text">I'll never let you go again</span>
         </div>
         <div class="chord-line">
@@ -99,36 +108,37 @@
             <span class="chord">G</span>
             <span class="text">Oh, I used to say</span>
         </div>
-    
+
         <p class="section">Reff:</p>
         <div class="chord-line">
-            <span class="chord">      F           G          C     Em</span>
+            <span class="chord"> F G C Em</span>
             <span class="text">I would never fall in love again until I found her</span>
         </div>
         <div class="chord-line">
-            <span class="chord">      F           G          C     C7</span>
+            <span class="chord"> F G C C7</span>
             <span class="text">I said, "I would never fall unless it's you I fall into"</span>
         </div>
         <div class="chord-line">
-            <span class="chord">      F           G          C     Em</span>
+            <span class="chord"> F G C Em</span>
             <span class="text">I was lost within the darkness but then I found her</span>
         </div>
         <div class="chord-line">
-            <span class="chord">        F....Fm</span>
+            <span class="chord"> F....Fm</span>
             <span class="text">I found you....(Music)</span>
         </div>
-    
+
         <p class="section">Outro:</p>
         <div class="chord-line"><span class="chord">C</span></div>
 
-        
+
         <p class="section">Penulis:</p>
         <div class="chord-line"><span class="chord">Haryo Wicaksono</span></div>
-    
-    </div>
-    
-    
 
-    <script src="js/Until_I_Found_You.js"></script>
+    </div>
+
+
+
+    <script src="../js/Until_I_Found_You.js"></script>
 </body>
+
 </html>
