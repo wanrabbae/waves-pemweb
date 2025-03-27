@@ -20,4 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
       setTimeout(() => window.location.href = 'login.html', 3000);
     });
   }
+
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const navLink = document.getElementById('nav-link');
+
+  hamburgerMenu.addEventListener('click', function () {
+    navLink.style.display = navLink.style.display === 'block' ? 'none' : 'block';
+  });
 });

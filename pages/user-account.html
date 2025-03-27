@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAVES - Akun Saya</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/user-account.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar-container">
+    <div>
+      <a href="../index.html"><img src="../images/logo.png" alt="" srcset="" class="logo"></a>
+    </div>
+
+    <div class="mobile-menu-toggle" id="hamburgerMenu">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="nav-link" id="nav-link">
+      <a href="chords.html">Chord</a>
+      <a href="video-tutorial.html">Video Tutorial</a>
+      <a href="forum-diskusi.html">Forum Diskusi</a>
+      <a href="wiki-musik.html">Wiki Musik</a>
+      <a href="tentang-bantuan.html">Tentang Kami</a>
+      <a href="user-account.html" class="active">Akun Saya</a>
+    </div>
+  </div>
+
+  <div class="account-container">
+    <div class="account-header">
+      <h1>Akun Saya</h1>
+      <p>Kelola profil dan materi belajar yang disimpan</p>
+    </div>
+
+    <div class="account-content">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <h2><i class="fas fa-user-circle"></i> Profil Saya</h2>
+
+        <div class="profile-picture">
+          <img src="../images/default-avatar.jpg" alt="Profile Picture" id="profile-img">
+          <button class="change-photo-btn"><i class="fas fa-camera"></i> Ganti Foto</button>
+          <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+        </div>
+
+        <form class="profile-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" value="MusisiHandal123" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" value="musisi@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="current-password">Password Saat Ini</label>
+            <input type="password" id="current-password" placeholder="Masukkan password saat ini">
+          </div>
+
+          <div class="form-group">
+            <label for="new-password">Password Baru</label>
+            <input type="password" id="new-password" placeholder="Masukkan password baru">
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-password">Konfirmasi Password Baru</label>
+            <input type="password" id="confirm-password" placeholder="Konfirmasi password baru">
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="cancel-btn">Batal</button>
+            <button type="submit" class="save-btn">Simpan Perubahan</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Saved Content Section -->
+      <div class="saved-content-section">
+        <h2><i class="fas fa-bookmark"></i> Materi Tersimpan</h2>
+
+        <div class="saved-tabs">
+          <button class="tab-btn active" data-tab="chords">Chord</button>
+          <button class="tab-btn" data-tab="videos">Video</button>
+          <button class="tab-btn" data-tab="topics">Topik Diskusi</button>
+        </div>
+
+        <!-- Saved Chords -->
+        <div class="tab-content active" id="chords">
+          <div class="saved-item">
+            <img src="https://i.scdn.co/image/ab67616d0000b273164feb363334f93b6458d2a9" alt="Someone Like You">
+            <div class="item-info">
+              <h3>Someone Like You</h3>
+              <p>Adele • Pop • Mudah</p>
+              <span class="save-date"><i class="far fa-calendar-alt"></i> Disimpan 2 hari lalu</span>
+            </div>
+            <button class="remove-btn"><i class="fas fa-times"></i></button>
+          </div>
+
+          <div class="saved-item">
+            <img src="https://i.scdn.co/image/ab67616d0000b273b3be3b970fc89a02f301c9da" alt="Perfect">
+            <div class="item-info">
+              <h3>Perfect</h3>
+              <p>Ed Sheeran • Pop • Mudah</p>
+              <span class="save-date"><i class="far fa-calendar-alt"></i> Disimpan 1 minggu lalu</span>
+            </div>
+            <button class="remove-btn"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+
+        <!-- Saved Videos -->
+        <div class="tab-content" id="videos">
+          <div class="saved-item">
+            <img src="https://i.ytimg.com/vi/2AoxCkySv34/maxresdefault.jpg" alt="Belajar Gitar Dasar">
+            <div class="item-info">
+              <h3>Belajar Gitar Dasar untuk Pemula</h3>
+              <p>GitarKu Channel • 12:45</p>
+              <span class="save-date"><i class="far fa-calendar-alt"></i> Disimpan 3 hari lalu</span>
+            </div>
+            <button class="remove-btn"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+
+        <!-- Saved Discussion Topics -->
+        <div class="tab-content" id="topics">
+          <div class="saved-item">
+            <div class="topic-icon"><i class="fas fa-comments"></i></div>
+            <div class="item-info">
+              <h3>Teknik palm muting yang benar</h3>
+              <p>Forum: Teknik Bermain • 18 balasan</p>
+              <span class="save-date"><i class="far fa-calendar-alt"></i> Disimpan 5 hari lalu</span>
+            </div>
+            <button class="remove-btn"><i class="fas fa-times"></i></button>
+          </div>
+
+          <div class="saved-item">
+            <div class="topic-icon"><i class="fas fa-comments"></i></div>
+            <div class="item-info">
+              <h3>Rekomendasi lagu untuk latihan fingerstyle</h3>
+              <p>Forum: Rekomendasi Lagu • 8 balasan</p>
+              <span class="save-date"><i class="far fa-calendar-alt"></i> Disimpan 2 minggu lalu</span>
+            </div>
+            <button class="remove-btn"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+
+        <div class="empty-state" style="display: none;">
+          <i class="far fa-folder-open"></i>
+          <p>Tidak ada materi yang disimpan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Tentang Waves</h3>
+        <p>Waves adalah platform untuk belajar musik, menemukan chord, dan berdiskusi dengan komunitas.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="tentang-bantuan.html#faq">FAQ</a></li>
+          <li><a href="tentang-bantuan.html#kontak">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/user-account.js"></script>
+</body>
+
+</html>

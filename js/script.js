@@ -1,5 +1,11 @@
-// Kategori Slider
 document.addEventListener('DOMContentLoaded', function () {
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const navLink = document.getElementById('nav-link');
+
+  hamburgerMenu.addEventListener('click', function () {
+    navLink.style.display = navLink.style.display === 'block' ? 'none' : 'block';
+  });
+
   const track = document.querySelector('.slider-track');
   const slides = Array.from(document.querySelectorAll('.slide'));
   const nextBtn = document.querySelector('.next-btn');
