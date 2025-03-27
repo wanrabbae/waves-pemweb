@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const newPosition = -currentIndex * (slideWidth + 20); // buat gap jarak 20px
     track.style.transform = `translateX(${newPosition}px)`;
 
-    // buat Disable/enable tombol prev/next
     prevBtn.disabled = currentIndex === 0;
     nextBtn.disabled = currentIndex >= slides.length - visibleSlides;
   }
