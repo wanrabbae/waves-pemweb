@@ -17,13 +17,17 @@
       <a href="../index.html"><img src="../images/logo.png" alt="" srcset="" class="logo"></a>
     </div>
 
-    <div class="nav-link">
-      <a href="">Chord</a>
-      <a href="">Video Tutorial</a>
-      <a href="">Forum</a>
-      <a href="">Wiki Musik</a>
-      <a href="tentang-bantuan.html">Tentang Kami</a>
-      <a href="login.html">Masuk</a>
+    <div class="mobile-menu-toggle" id="hamburgerMenu">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="nav-link" id="nav-link">
+      <a href="chords.html">Chord</a>
+      <a href="./video-tutorial.html">Video Tutorial</a>
+      <a href="./forum-diskusi.html">Forum Diskusi</a>
+      <a href="./wiki-musik.html">Wiki Musik</a>
+      <a href="./tentang-bantuan.html">Tentang Kami</a>
+      <a href="./login.html">Masuk</a>
     </div>
   </div>
 
@@ -48,6 +52,12 @@
           <input type="password" id="confirm-password" name="confirm-password" placeholder="Konfirmasi Password"
             required>
         </div>
+
+        <label for="">Foto Profil</label>
+        <div class="input-group" style="margin-top: 5px;">
+          <i class="fas fa-image icon"></i>
+          <input type="file" id="" name="" required accept="image/*">
+        </div>
         <button type="submit" class="register-btn">Daftar Sekarang</button>
         <div class="login-link">
           Sudah punya akun? <a href="login.html">Masuk disini</a>
@@ -66,17 +76,18 @@
       <div class="footer-section">
         <h3>Quick Link</h3>
         <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Hubungi Kami</a></li>
+          <li><a href="tentang-bantuan.html#faq">FAQ</a></li>
+          <li><a href="tentang-bantuan.html#kontak">Hubungi Kami</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h3>Social Media</h3>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">YouTube</a></li>
-        </ul>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
       </div>
     </div>
   </footer>

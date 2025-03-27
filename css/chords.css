@@ -1,0 +1,239 @@
+@import url('utils.css');
+
+/* Chords Page Styles */
+.chords-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.chords-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.chords-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.chords-header p {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+/* Search and Filter */
+.chords-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 20px;
+  border: 1px solid #333;
+  border-radius: 30px 0 0 30px;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.search-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0 25px;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #4b4acf;
+}
+
+.category-filter {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-btn {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.category-btn.active {
+  background-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.category-btn:hover:not(.active) {
+  background-color: #333;
+}
+
+/* Chords Listing */
+.chords-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.chord-item {
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.chord-item:hover {
+  transform: translateY(-5px);
+}
+
+.chord-image {
+  position: relative;
+}
+
+.chord-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.difficulty-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.difficulty-badge.easy {
+  background-color: rgba(46, 213, 115, 0.2);
+  color: #2ed573;
+}
+
+.difficulty-badge.medium {
+  background-color: rgba(255, 159, 64, 0.2);
+  color: #ff9f40;
+}
+
+.difficulty-badge.hard {
+  background-color: rgba(255, 71, 87, 0.2);
+  color: #ff4757;
+}
+
+.chord-info {
+  padding: 20px;
+}
+
+.chord-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.chord-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.chord-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chord-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.play-btn, .save-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.play-btn {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+}
+
+.play-btn:hover {
+  background-color: #4b4acf;
+}
+
+.save-btn {
+  background-color: #333;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #444;
+}
+
+.save-btn.saved {
+  background-color: var(--primary-color);
+}
+
+.load-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chords-listing {
+    grid-template-columns: 1fr;
+  }
+  
+  .chord-actions {
+    flex-direction: column;
+  }
+  
+  .play-btn, .save-btn {
+    width: 100%;
+  }
+}

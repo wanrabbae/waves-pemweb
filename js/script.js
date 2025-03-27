@@ -1,5 +1,11 @@
-// Kategori Slider
 document.addEventListener('DOMContentLoaded', function () {
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const navLink = document.getElementById('nav-link');
+
+  hamburgerMenu.addEventListener('click', function () {
+    navLink.style.display = navLink.style.display === 'block' ? 'none' : 'block';
+  });
+
   const track = document.querySelector('.slider-track');
   const slides = Array.from(document.querySelectorAll('.slide'));
   const nextBtn = document.querySelector('.next-btn');
@@ -32,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const newPosition = -currentIndex * (slideWidth + 20); // buat gap jarak 20px
     track.style.transform = `translateX(${newPosition}px)`;
 
-    // buat Disable/enable tombol prev/next
     prevBtn.disabled = currentIndex === 0;
     nextBtn.disabled = currentIndex >= slides.length - visibleSlides;
   }

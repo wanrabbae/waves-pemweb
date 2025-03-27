@@ -17,13 +17,17 @@
       <a href="../index.html"><img src="../images/logo.png" alt="" srcset="" class="logo"></a>
     </div>
 
-    <div class="nav-link">
-      <a href="">Chord</a>
-      <a href="">Video Tutorial</a>
-      <a href="forum-diskusi.html" class="active">Forum</a>
-      <a href="">Wiki Musik</a>
-      <a href="tentang-bantuan.html">Tentang Kami</a>
-      <a href="login.html">Masuk</a>
+    <div class="mobile-menu-toggle" id="hamburgerMenu">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="nav-link" id="nav-link">
+      <a href="./chords.html">Chord</a>
+      <a href="./video-tutorial.html">Video Tutorial</a>
+      <a href="./forum-diskusi.html" class="active">Forum Diskusi</a>
+      <a href="./wiki-musik.html">Wiki Musik</a>
+      <a href="./tentang-bantuan.html">Tentang Kami</a>
+      <a href="./login.html">Masuk</a>
     </div>
   </div>
 
@@ -86,7 +90,7 @@
         </div>
 
         <div class="thread-list">
-          <!-- Thread Item 1 -->
+          <!-- Thread Items -->
           <div class="thread-item" data-category="teknik">
             <div class="thread-category">
               <span class="category-badge teknik">Teknik Bermain</span>
@@ -101,7 +105,6 @@
             </div>
           </div>
 
-          <!-- Thread Item 2 -->
           <div class="thread-item" data-category="rekomendasi">
             <div class="thread-category">
               <span class="category-badge rekomendasi">Rekomendasi Lagu</span>
@@ -116,7 +119,6 @@
             </div>
           </div>
 
-          <!-- Thread Item 3 -->
           <div class="thread-item" data-category="peralatan">
             <div class="thread-category">
               <span class="category-badge peralatan">Peralatan Musik</span>
@@ -131,7 +133,6 @@
             </div>
           </div>
 
-          <!-- Thread Item 4 -->
           <div class="thread-item" data-category="teori">
             <div class="thread-category">
               <span class="category-badge teori">Teori Musik</span>
@@ -146,7 +147,6 @@
             </div>
           </div>
 
-          <!-- Thread Item 5 -->
           <div class="thread-item" data-category="teknik">
             <div class="thread-category">
               <span class="category-badge teknik">Teknik Bermain</span>
@@ -182,22 +182,23 @@
       <div class="footer-section">
         <h3>Quick Link</h3>
         <ul>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="tentang-bantuan.html#faq">FAQ</a></li>
           <li><a href="tentang-bantuan.html#kontak">Hubungi Kami</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h3>Social Media</h3>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">YouTube</a></li>
-        </ul>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="../js/forum-diskusi.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

@@ -12,14 +12,17 @@
 </head>
 
 <body>
-
   <div class="navbar-container">
     <div>
       <a href="./index.html"><img src="images/logo.png " alt="" srcset="" class="logo"></a>
     </div>
 
-    <div class="nav-link">
-      <a href="">Chord</a>
+    <div class="mobile-menu-toggle" id="hamburgerMenu">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="nav-link" id="nav-link">
+      <a href="./pages/chords.html">Chord</a>
       <a href="pages/video-tutorial.html">Video Tutorial</a>
       <a href="pages/forum-diskusi.html">Forum</a>
       <a href="pages/wiki-musik.html">Wiki Musik</a>
@@ -29,7 +32,7 @@
   </div>
 
   <div class="content-container">
-    <img src="images//bg.png" alt="">
+    <img src="images/bg.png" alt="">
     <div class="content-hero">
       <div class="text-container">
         <p class="chord-text">Temukan Chord, Tutorial, & Komunitas</p>
@@ -101,7 +104,7 @@
           <img src="https://i.scdn.co/image/ab67616d0000b273164feb363334f93b6458d2a9" alt="Artist">
           <p>Someone Like You - Adele</p>
         </div>
-        <a href="Until_I_Found_You.html">
+        <a href="./pages/chords-detail.html">
           <div class="chord-item">
             <img src="https://i.scdn.co/image/ab67616d0000b2738792c3e96f8ab97a767c5d0c" alt="Artist">
             <p>Until I Found You - Stephen Sanchez</p>
@@ -115,7 +118,7 @@
         </div>
       </div>
 
-      <a href="" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat Semua</a>
+      <a href="./pages" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat Semua</a>
     </section>
 
     <!-- Video Tutorial Terbaru -->
@@ -130,7 +133,8 @@
           frameborder="0" allowfullscreen></iframe>
       </div>
 
-      <a href="" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat Semua</a>
+      <a href="./pages/video-tutorial.html" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat
+        Semua</a>
     </section>
 
     <!-- Diskusi Terbaru -->
@@ -183,7 +187,8 @@
         </div>
       </div>
 
-      <a href="" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat Semua</a>
+      <a href="./pages/forum-diskusi.html" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat
+        Semua</a>
     </section>
 
     <!-- Artikel Musik Pilihan -->
@@ -240,7 +245,8 @@
         </div>
       </div>
 
-      <a href="" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat Semua</a>
+      <a href="./pages/wiki-musik.html" class="btn btn-secondary" style="margin-top: 20px; font-size: 12px;">Lihat
+        Semua</a>
     </section>
   </div>
 
@@ -254,17 +260,18 @@
       <div class="footer-section">
         <h3>Quick Link</h3>
         <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Hubungi Kami</a></li>
+          <li><a href="./pages/tentang-bantuan.html#faq">FAQ</a></li>
+          <li><a href="./pages/tentang-bantuan.html#kontak">Hubungi Kami</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h3>Social Media</h3>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">YouTube</a></li>
-        </ul>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
       </div>
     </div>
   </footer>

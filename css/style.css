@@ -14,6 +14,10 @@ h1, h2, h3 {
     font-family: 'Fira Mono', monospace;
 }
 
+.mobile-menu-toggle {
+    display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -112,6 +116,11 @@ h1, h2, h3 {
   width: 150px;
   height: 150px;
   border-radius: 10px;
+}
+
+.chord-list a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Video Tutorial */
@@ -414,8 +423,126 @@ footer {
   text-decoration: none;
 }
 
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: var(--primary-color);
+}
+
+.save-btn {
+  margin-top: 10px;
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.save-btn {
+  background-color: #333;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #444;
+}
+
+.save-btn.saved {
+  background-color: var(--primary-color);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    z-index: 1001;
+    position: relative;
+  }
+
+  #nav-link {
+    display: none;
+  }
+
+  .nav-link {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 80px 20px 20px;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link.active {
+    display: flex;
+  }
+
+  .nav-link a {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-container {
+    padding: 0;
+    position: relative;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .content-hero {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .video-list {
+    flex-direction: column;
+  }
+
+  .video-list a {
+    margin-bottom: 20px;
+  }
+
+  .video-list iframe {
+    width: 100%;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
   .wiki-card-content {
     flex-direction: column;
   }
@@ -430,5 +557,16 @@ footer {
   
   .encyclopedia-nav {
     grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
   }
 }

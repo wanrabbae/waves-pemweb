@@ -51,10 +51,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.querySelector(".like-btn").addEventListener("click", function() {
+document.querySelector(".like-btn").addEventListener("click", function () {
     this.classList.add("heartbeat");
-    
+
     setTimeout(() => {
         this.classList.remove("heartbeat");
     }, 400); // Sesuai dengan durasi animasi
+});
+
+const hamburgerMenu = document.getElementById('hamburgerMenu');
+const navLink = document.getElementById('nav-link');
+
+hamburgerMenu.addEventListener('click', function () {
+    navLink.style.display = navLink.style.display === 'block' ? 'none' : 'block';
 });
