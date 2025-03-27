@@ -50,3 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
         window.scrollBy({ top: 200, behavior: "smooth" });
     });
 });
+
+document.querySelector(".like-btn").addEventListener("click", function() {
+    this.classList.add("heartbeat");
+    
+    setTimeout(() => {
+        this.classList.remove("heartbeat");
+    }, 400); // Sesuai dengan durasi animasi
+});
